@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Huellitas Comunitarias</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4ef;
+            color: #39483c;
+        }
+
+        header {
+            background-color: #9caf88;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-pequeno {
+            width: 100px;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
+
+        header h1 {
+            color: white;
+            margin: 5px 0;
+        }
+
+        header p {
+            color: white;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #39483c;
+            background-color: #f7f8f2;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .boton-nav.activo {
+            background-color: #526b50;
+            color: white;
+            font-weight: bold;
+        }
+
+        .boton-nav:hover {
+            background-color: #526b50;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            gap: 25px;
+            margin: 30px auto;
+            padding: 0 20px;
+            max-width: 1100px;
+            align-items: flex-start;
+        }
+
+        aside {
+            width: 28%;
+            background-color: #dfe8d9;
+            padding: 20px;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+
+        aside h3 {
+            color: #526b50;
+        }
+
+        aside p {
+            line-height: 1.7;
+        }
+
+        section {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #00000010;
+            box-sizing: border-box;
+        }
+
+        section h2 {
+            color: #526b50;
+        }
+
+        section p {
+            line-height: 1.8;
+        }
+
+        .imagen-animal {
+            width: 100%;
+            max-width: 400px;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+            margin: 25px auto;
+            border-radius: 15px;
+        }
+
+        .mensaje-final {
+            background-color: #edf3e8;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #9caf88;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+                margin: 20px auto;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            section {
+                width: 100%;
+            }
+
+            .imagen-animal {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img src="7.jpg"
+             alt="Logo de Huellitas Comunitarias"
+             class="logo-pequeno">
+
+        <h1>Huellitas Comunitarias </h1>
+
+        <p>Pequeñas acciones, grandes cambios</p>
+
+        <nav class="barra-navegacion">
+            <a href="index.html" class="boton-nav activo">Inicio</a>
+            <a href="adopciones.html" class="boton-nav">Adopciones</a>
+            <a href="donaciones.html" class="boton-nav">Donaciones</a>
+            <a href="nosotros.html" class="boton-nav">Nosotros</a>
+            <a href="contacto.html" class="boton-nav">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <aside>
+
+            <h3> Un dato importante</h3>
+
+            <p>
+                Los animales necesitan alimento, protección,
+                atención y cariño. Todos podemos contribuir
+                a que tengan una vida más segura.
+            </p>
+
+            <hr>
+
+            <h3> ¿Cómo puedes colaborar?</h3>
+
+            <p>
+                Puedes apoyar con alimento, cobijas,
+                materiales de limpieza o difundiendo
+                información sobre el cuidado responsable.
+            </p>
+
+            <p>
+                Cada pequeña ayuda cuenta.
+            </p>
+
+        </aside>
+
+        <section>
+
+            <article>
+
+                <h2>¡Bienvenidos a Huellitas Comunitarias! </h2>
+
+                <p>
+                    Este proyecto escolar busca crear conciencia
+                    sobre el cuidado de los animales de nuestra
+                    comunidad, especialmente aquellos que viven
+                    en situación de calle.
+                </p>
+
+                <img src="6.jpg"
+                     alt="Fotografía de varios perritos"
+                     class="imagen-animal">
+
+                <h2>Por una comunidad que los cuide </h2>
+
+                <p>
+                    Queremos fomentar el respeto hacia los animales
+                    y compartir información que ayude a mejorar
+                    sus condiciones de vida. También buscamos
+                    motivar a las personas a participar en acciones
+                    de apoyo y protección.
+                </p>
+
+                <div class="mensaje-final">
+
+                    <h3>¡Todos podemos hacer la diferencia!</h3>
+
+                    <p>
+                        Explora nuestras páginas para conocer
+                        las historias de los animalitos y descubrir
+                        cómo puedes contribuir a esta causa.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Huellitas Comunitarias | Proyecto PAEC</p>
+
+        <p>CBTis 116 · Unidos por el bienestar animal </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
